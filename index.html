@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ki & Ko's Bridal Studio | Luxury Bridal Makeup & Premium Salon Hyderabad</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Elevate your bridal elegance at Ki & Ko's Bridal Studio. Hyderabad's premier luxury bridal makeup salon specializing in editorial Baraat, Walima, Engagement, and Reception looks." />
+  <meta name="keywords" content="bridal makeup Hyderabad, luxury bridal salon, Ki and Ko, wedding makeup Pakistan, makeup artist Hyderabad Saddar, Walima makeup, engagement makeup" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryBg: '#FFF9FC',
+            secondaryBg: '#FDEEF5',
+            accentRose: '#D96C95',
+            roseGold: '#D4AF37',
+            highlight: '#FBE5EE',
+            cardBg: '#FFFFFF',
+            textDark: '#2B2B2B',
+            textMuted: '#6F6F6F',
+            borderPink: '#F2DCE6',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Inter"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles Link -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-primaryBg text-textDark font-sans selection:bg-highlight selection:text-accentRose overflow-x-hidden">
+
+  <!-- TOP INFO BAR -->
+  <div class="bg-secondaryBg border-b border-borderPink py-2 px-4 text-center text-xs tracking-wider text-accentRose font-medium flex justify-center items-center gap-2">
+    <span>✨ HYDERABAD'S PREMIER LUXURY BRIDAL DESTINATION</span>
+    <span class="hidden md:inline">•</span>
+    <span class="hidden md:inline">📞 CALL & WHATSAPP: +92 302 0000312</span>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 bg-white/85 backdrop-blur-md border-b border-borderPink/40">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+      <!-- Logo Wordmark -->
+      <a href="#" class="flex flex-col group" id="nav-logo">
+        <span class="font-serif text-2xl md:text-3xl tracking-widest text-textDark group-hover:text-accentRose transition-colors duration-300">
+          KI &amp; KO'S
+        </span>
+        <span class="text-[9px] md:text-[10px] tracking-[0.3em] text-roseGold font-mono uppercase">
+          Bridal Studio
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="#hero" class="nav-link text-xs tracking-widest uppercase font-medium hover:text-accentRose transition-colors duration-300 text-accentRose">Home</a>
+        <a href="#about" class="nav-link text-xs tracking-widest uppercase font-medium hover:text-accentRose transition-colors duration-300 text-textMuted">About</a>
+        <a href="#services" class="nav-link text-xs tracking-widest uppercase font-medium hover:text-accentRose transition-colors duration-300 text-textMuted">Services</a>
+        <a href="#experience" class="nav-link text-xs tracking-widest uppercase font-medium hover:text-accentRose transition-colors duration-300 text-textMuted">Experience</a>
+        <a href="#portfolio" class="nav-link text-xs tracking-widest uppercase font-medium hover:text-accentRose transition-colors duration-300 text-textMuted">Portfolio</a>
+        <a href="#testimonials" class="nav-link text-xs tracking-widest uppercase font-medium hover:text-accentRose transition-colors duration-300 text-textMuted">Reviews</a>
+        <a href="#contact" class="nav-link text-xs tracking-widest uppercase font-medium hover:text-accentRose transition-colors duration-300 text-textMuted">Contact</a>
+      </nav>
+
+      <!-- Desktop Call to Action -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="#contact" class="text-xs uppercase tracking-widest border border-roseGold/60 hover:border-accentRose px-5 py-2.5 rounded-full text-textDark hover:bg-highlight/30 transition-all duration-300 font-medium">
+          Book Appointment
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="lg:hidden text-textDark focus:outline-none p-2" aria-label="Toggle Menu">
+        <svg id="hamburger-icon" class="w-6 h-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden absolute top-20 left-0 w-full bg-white border-b border-borderPink py-8 px-6 shadow-lg transform transition-all duration-300 origin-top">
+      <nav class="flex flex-col gap-5 text-center">
+        <a href="#hero" class="mobile-nav-link text-sm tracking-widest uppercase font-medium text-accentRose py-1">Home</a>
+        <a href="#about" class="mobile-nav-link text-sm tracking-widest uppercase font-medium text-textMuted hover:text-accentRose py-1">About</a>
+        <a href="#services" class="mobile-nav-link text-sm tracking-widest uppercase font-medium text-textMuted hover:text-accentRose py-1">Services</a>
+        <a href="#experience" class="mobile-nav-link text-sm tracking-widest uppercase font-medium text-textMuted hover:text-accentRose py-1">Experience</a>
+        <a href="#portfolio" class="mobile-nav-link text-sm tracking-widest uppercase font-medium text-textMuted hover:text-accentRose py-1">Portfolio</a>
+        <a href="#testimonials" class="mobile-nav-link text-sm tracking-widest uppercase font-medium text-textMuted hover:text-accentRose py-1">Reviews</a>
+        <a href="#contact" class="mobile-nav-link text-sm tracking-widest uppercase font-medium text-textMuted hover:text-accentRose py-1">Contact</a>
+        <div class="pt-4 border-t border-borderPink/40 flex flex-col gap-3">
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20bridal%20consultation." target="_blank" class="bg-accentRose text-white text-xs uppercase tracking-widest py-3 rounded-full hover:bg-accentRose/90 transition-colors duration-300 font-medium">
+            WhatsApp Inquiry
+          </a>
+          <a href="tel:+923020000312" class="border border-roseGold text-textDark text-xs uppercase tracking-widest py-3 rounded-full hover:bg-highlight/30 transition-colors duration-300 font-medium">
+            Call Studio
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative min-h-[calc(100vh-7.5rem)] flex items-center pt-8 pb-16 px-6 overflow-hidden">
+    <!-- Soft Decorative Blobs -->
+    <div class="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-secondaryBg/60 blur-3xl -z-10"></div>
+    <div class="absolute bottom-10 right-0 w-[500px] h-[500px] rounded-full bg-highlight/40 blur-3xl -z-10"></div>
+
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Hero Copy -->
+      <div class="lg:col-span-7 flex flex-col space-y-8 animate-fade-in-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-borderPink w-fit shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-accentRose animate-pulse"></span>
+          <span class="text-[10px] tracking-[0.2em] font-mono text-accentRose uppercase font-semibold">BOOKINGS OPEN FOR THE SEASON</span>
+        </div>
+
+        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight leading-[1.1] text-textDark">
+          Your Dream <br class="hidden sm:inline" />
+          <span class="relative inline-block text-accentRose">
+            Bridal Look,
+            <span class="absolute left-0 bottom-2 w-full h-[6px] bg-highlight -z-10"></span>
+          </span> <br />
+          Beautifully Crafted.
+        </h1>
+
+        <p class="text-textMuted text-base md:text-lg max-w-xl leading-relaxed font-light">
+          Luxury bridal makeup, engagement makeup, reception looks and premium beauty experiences tailored for your special day. Discover Hyderabad's sanctuary of high-end wedding glam.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+          <a href="#contact" class="group relative overflow-hidden bg-accentRose text-white px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-medium shadow-md shadow-accentRose/10 hover:shadow-lg hover:shadow-accentRose/20 transition-all duration-300 text-center">
+            <span class="relative z-10">Book Consultation</span>
+            <div class="absolute inset-0 -translate-x-full group-hover:translate-x-0 bg-gradient-to-r from-roseGold to-accentRose transition-transform duration-500 ease-out"></div>
+          </a>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20bridal%20consultation." target="_blank" class="flex items-center justify-center gap-2.5 border border-borderPink hover:border-accentRose bg-white px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-medium text-textDark hover:bg-highlight/20 transition-all duration-300">
+            <!-- Custom WhatsApp Logo -->
+            <svg class="w-4.5 h-4.5 fill-green-500" viewBox="0 0 24 24">
+              <path d="M12.004 2c-5.51 0-9.993 4.483-9.993 9.993 0 1.763.461 3.42 1.268 4.873l-1.347 4.925 5.043-1.324a9.916 9.916 0 005.029 1.355h.004c5.51 0 9.993-4.483 9.993-9.993 0-5.51-4.483-9.993-9.993-9.993zm5.835 14.152c-.243.684-1.21 1.25-1.657 1.303-.433.053-.984.083-2.903-.681-2.454-.975-4.004-3.466-4.127-3.63-.122-.164-.975-1.294-.975-2.47 0-1.176.61-1.752.827-1.983.218-.23.477-.289.637-.289.159 0 .318.001.458.007.147.006.34-.055.531.402.196.471.674 1.643.731 1.761.058.118.09.255.01.412-.08.158-.12.255-.24.394-.12.139-.251.31-.358.416-.12.118-.244.248-.104.488.14.24.62 1.017 1.329 1.649.913.814 1.68 1.066 1.918 1.186.24.12.381.102.523-.061.141-.164.61-.71.774-.952.164-.242.329-.202.553-.12.224.082 1.417.671 1.66 1.141.133.256.133.483.053.684z"/>
+            </svg>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Trust Stats Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-borderPink/60">
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl font-semibold text-accentRose">30+</span>
+            <span class="text-[10px] tracking-widest font-mono text-textMuted uppercase mt-1">Happy Brides</span>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1">
+              <span class="font-serif text-3xl font-semibold text-roseGold">4.8</span>
+              <svg class="w-4.5 h-4.5 fill-roseGold text-roseGold" viewBox="0 0 24 24">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+            </div>
+            <span class="text-[10px] tracking-widest font-mono text-textMuted uppercase mt-1">Google Rating</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl font-semibold text-textDark">100%</span>
+            <span class="text-[10px] tracking-widest font-mono text-textMuted uppercase mt-1">Bridal Experts</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl font-semibold text-accentRose">Premium</span>
+            <span class="text-[10px] tracking-widest font-mono text-textMuted uppercase mt-1">Makeup Studio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Canvas (Premium Abstract Placeholder) -->
+      <div class="lg:col-span-5 flex justify-center lg:justify-end animate-fade-in-right">
+        <div class="relative w-full max-w-sm sm:max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-white border border-borderPink p-4 group">
+          <!-- Background geometric details -->
+          <div class="absolute inset-0 bg-gradient-to-tr from-secondaryBg via-white to-highlight/30 -z-10"></div>
+          
+          <!-- Elegant Line Art / Circular Luxury Frame -->
+          <div class="w-full h-full border border-roseGold/30 rounded-2xl flex flex-col items-center justify-center p-8 relative">
+            <div class="absolute top-4 left-4 text-[9px] font-mono tracking-widest text-roseGold uppercase">KI &amp; KO • ATELIER</div>
+            <div class="absolute bottom-4 right-4 text-[9px] font-mono tracking-widest text-accentRose uppercase">HYDERABAD, SADDAR</div>
+            
+            <!-- Delicate luxury circular frame representing bridal crown/mirror -->
+            <div class="w-48 h-48 rounded-full border border-dashed border-roseGold/40 flex items-center justify-center relative mb-6">
+              <div class="w-40 h-40 rounded-full bg-gradient-to-b from-highlight to-secondaryBg/80 flex items-center justify-center p-4 shadow-inner relative">
+                <!-- Golden Floral Ornament Vector Simulation -->
+                <svg class="w-24 h-24 text-roseGold/60 opacity-85" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M50 10 C 35 30, 65 30, 50 50 C 35 70, 65 70, 50 90" />
+                  <path d="M10 50 C 30 35, 30 65, 50 50 C 70 35, 70 65, 90 50" />
+                  <circle cx="50" cy="50" r="1.5" fill="currentColor" />
+                  <circle cx="50" cy="10" r="1" fill="currentColor" />
+                  <circle cx="50" cy="90" r="1" fill="currentColor" />
+                  <circle cx="10" cy="50" r="1" fill="currentColor" />
+                  <circle cx="90" cy="50" r="1" fill="currentColor" />
+                  <!-- Outer petal rings -->
+                  <path d="M50 50 M32 32 C 40 40, 45 35, 50 32 C 55 35, 60 40, 68 32" />
+                  <path d="M50 50 M32 68 C 40 60, 45 65, 50 68 C 55 65, 60 60, 68 68" />
+                </svg>
+              </div>
+              <!-- Luxury Diamond Sparkles -->
+              <span class="absolute top-0 left-12 text-roseGold animate-pulse">✦</span>
+              <span class="absolute bottom-2 right-12 text-accentRose animate-pulse delay-75">✦</span>
+              <span class="absolute right-0 top-16 text-roseGold animate-pulse delay-150">✦</span>
+            </div>
+
+            <div class="text-center">
+              <h3 class="font-serif text-2xl tracking-wide text-textDark mb-2">Bespoke Bridal Elegance</h3>
+              <p class="text-xs text-textMuted max-w-[240px] leading-relaxed mx-auto italic">
+                "Where high fashion meets high-end artistry to compose your signature wedding look."
+              </p>
+            </div>
+            
+            <!-- Overlay Glass Card representing cosmetics -->
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-[85%] bg-white/70 backdrop-blur-md border border-white/50 py-3 px-4 rounded-xl flex justify-between items-center shadow-md">
+              <div class="flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-full bg-accentRose/10 flex items-center justify-center text-accentRose">
+                  ✨
+                </span>
+                <div class="flex flex-col text-left">
+                  <span class="text-[9px] font-mono tracking-widest text-roseGold uppercase font-semibold">COUTURE BRAND PARTNERS</span>
+                  <span class="text-[10px] text-textDark font-medium">Charlotte Tilbury, Dior, NARS</span>
+                </div>
+              </div>
+              <span class="text-xs text-roseGold font-serif">100%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about" class="py-24 px-6 bg-white border-y border-borderPink/30 relative">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      
+      <!-- Left side: Editorial copywriting -->
+      <div class="lg:col-span-7 flex flex-col space-y-6 scroll-reveal">
+        <span class="text-xs font-mono tracking-[0.3em] text-accentRose uppercase font-semibold">THE SANCTUARY OF ARTISTRY</span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-textDark tracking-tight leading-tight">
+          Where Elegance Meets Masterful Craft.
+        </h2>
+        <div class="h-0.5 w-16 bg-roseGold/60"></div>
+        <p class="text-textMuted text-base leading-relaxed font-light">
+          Founded on the philosophy that every bride possesses a unique narrative, <strong>Ki &amp; Ko's Bridal Studio</strong> is Hyderabad's premium destination for luxury bridal cosmetics and editorial hair styling. Located in the heart of Saddar Cantonment, we curate sophisticated beauty experiences inspired by international bridal runways and local heritage.
+        </p>
+        <p class="text-textMuted text-base leading-relaxed font-light">
+          We reject the standard, heavy "one-look-fits-all" mask. Instead, our artists employ high-definition draping, modern seamless blending, and micro-shading techniques to craft a breathable, glowing, high-contrast look that elevates your natural features. We exclusively partner with legendary beauty houses—including Charlotte Tilbury, Dior, Chanel, NARS, Huda Beauty, and Estée Lauder—ensuring your makeup looks pristine under any wedding lights and remains flawless until dawn.
+        </p>
+        
+        <!-- Luxury bullet list -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+          <div class="flex items-start gap-3">
+            <span class="text-roseGold mt-0.5">✦</span>
+            <div>
+              <h4 class="text-xs uppercase tracking-widest text-textDark font-semibold">Bespoke Skin Perfecting</h4>
+              <p class="text-xs text-textMuted mt-0.5 leading-relaxed">Personalized color correction matching your precise undertone.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-roseGold mt-0.5">✦</span>
+            <div>
+              <h4 class="text-xs uppercase tracking-widest text-textDark font-semibold">Editorial Hair Sculpting</h4>
+              <p class="text-xs text-textMuted mt-0.5 leading-relaxed">Chic updos, flowing royal waves, and intricate traditional settings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Bento Grid highlighting pillars -->
+      <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-6 scroll-reveal">
+        <!-- Card 1: The Artistry -->
+        <div class="bg-primaryBg border border-borderPink/60 p-6 rounded-2xl flex flex-col justify-between aspect-square group hover:border-accentRose hover:bg-white transition-all duration-500">
+          <div class="w-12 h-12 rounded-full bg-highlight flex items-center justify-center text-accentRose mb-6 group-hover:scale-110 transition-transform duration-300">
+            🎨
+          </div>
+          <div>
+            <h3 class="font-serif text-lg text-textDark mb-2">The Artistry</h3>
+            <p class="text-xs text-textMuted leading-relaxed">Master artists certified in high-definition bridal techniques, crafting looks tailored to high-definition cameras.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: The Sanctuary -->
+        <div class="bg-secondaryBg border border-borderPink/60 p-6 rounded-2xl flex flex-col justify-between aspect-square group hover:border-accentRose hover:bg-white transition-all duration-500">
+          <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-roseGold mb-6 group-hover:scale-110 transition-transform duration-300">
+            🌸
+          </div>
+          <div>
+            <h3 class="font-serif text-lg text-textDark mb-2">The Sanctuary</h3>
+            <p class="text-xs text-textMuted leading-relaxed">A private, calming luxury environment created specifically to relax and pamper the bride on her big day.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: The Products (takes double width on mobile if layout fits) -->
+        <div class="sm:col-span-2 bg-white border border-borderPink p-6 rounded-2xl flex flex-col sm:flex-row gap-6 items-start sm:items-center hover:border-roseGold transition-all duration-500">
+          <div class="w-12 h-12 shrink-0 rounded-full bg-highlight flex items-center justify-center text-accentRose">
+            💄
+          </div>
+          <div>
+            <h3 class="font-serif text-lg text-textDark mb-1">Our Luxury Cabinet</h3>
+            <p class="text-xs text-textMuted leading-relaxed">
+              We never compromise. Every foundation, highlight, primer, and setter is hand-selected from prestige global luxury labels to ensure durability, hydration, and flawless photography.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SIGNATURE SERVICES -->
+  <section id="services" class="py-24 px-6 bg-primaryBg">
+    <div class="max-w-7xl mx-auto text-center mb-16 scroll-reveal">
+      <span class="text-xs font-mono tracking-[0.3em] text-accentRose uppercase font-semibold">THE ATELIER COLLECTION</span>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-textDark mt-3 mb-4 tracking-tight">Our Signature Services</h2>
+      <div class="h-0.5 w-16 bg-roseGold/60 mx-auto mb-6"></div>
+      <p class="text-textMuted max-w-xl mx-auto text-sm md:text-base font-light">
+        Each appointment represents a collaborative journey. Select your signature luxury experience designed to elevate and customize your special day.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Service 1: Bridal Makeup -->
+      <div class="bg-white border border-borderPink rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group scroll-reveal">
+        <div class="absolute top-4 right-4 text-[9px] font-mono tracking-widest text-roseGold bg-secondaryBg px-2.5 py-1 rounded-full uppercase font-medium">Bestseller</div>
+        <div>
+          <h3 class="font-serif text-xl text-textDark mb-2 mt-4">Bridal Makeup</h3>
+          <p class="text-xs text-textMuted leading-relaxed mb-6">
+            The ultimate luxury transformation. High-definition custom contouring, premium lash extensions, personalized undertone matching, and a flawless, long-lasting glow. Includes dupatta and jewelry setting.
+          </p>
+        </div>
+        <div class="border-t border-borderPink/50 pt-4 flex items-center justify-between">
+          <span class="text-xs font-mono text-roseGold uppercase tracking-wider">Premium Package</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Bridal%20Makeup%20consultation." target="_blank" class="text-xs font-medium text-accentRose hover:text-textDark flex items-center gap-1 transition-colors duration-200 uppercase tracking-widest">
+            Book Look ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 2: Engagement Makeup -->
+      <div class="bg-white border border-borderPink rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 scroll-reveal">
+        <div>
+          <h3 class="font-serif text-xl text-textDark mb-2 mt-4">Engagement Makeup</h3>
+          <p class="text-xs text-textMuted leading-relaxed mb-6">
+            A soft, romantic look incorporating luminous skin, pastel highlights, and a radiant finish tailored specifically for your ring ceremony and photography.
+          </p>
+        </div>
+        <div class="border-t border-borderPink/50 pt-4 flex items-center justify-between">
+          <span class="text-xs font-mono text-roseGold uppercase tracking-wider">Luminous Package</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20an%20Engagement%20Makeup%20consultation." target="_blank" class="text-xs font-medium text-accentRose hover:text-textDark flex items-center gap-1 transition-colors duration-200 uppercase tracking-widest">
+            Book Look ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 3: Reception Makeup -->
+      <div class="bg-white border border-borderPink rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 scroll-reveal">
+        <div>
+          <h3 class="font-serif text-xl text-textDark mb-2 mt-4">Reception Makeup</h3>
+          <p class="text-xs text-textMuted leading-relaxed mb-6">
+            An elegant, sophisticated modern glow. Striking eyes, luxury glass skin, and deep custom-sculpted definitions suited for grand reception evening lights.
+          </p>
+        </div>
+        <div class="border-t border-borderPink/50 pt-4 flex items-center justify-between">
+          <span class="text-xs font-mono text-roseGold uppercase tracking-wider">Glamour Package</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Reception%20Makeup%20consultation." target="_blank" class="text-xs font-medium text-accentRose hover:text-textDark flex items-center gap-1 transition-colors duration-200 uppercase tracking-widest">
+            Book Look ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 4: Walima Makeup -->
+      <div class="bg-white border border-borderPink rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 scroll-reveal">
+        <div>
+          <h3 class="font-serif text-xl text-textDark mb-2 mt-4">Walima Makeup</h3>
+          <p class="text-xs text-textMuted leading-relaxed mb-6">
+            A serene, angelic aesthetic utilizing delicate dewy finishes, soft shimmer shadows, and timeless blushing hues perfectly aligned with silver and pastel bridal attire.
+          </p>
+        </div>
+        <div class="border-t border-borderPink/50 pt-4 flex items-center justify-between">
+          <span class="text-xs font-mono text-roseGold uppercase tracking-wider">Angelic Package</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Walima%20Makeup%20consultation." target="_blank" class="text-xs font-medium text-accentRose hover:text-textDark flex items-center gap-1 transition-colors duration-200 uppercase tracking-widest">
+            Book Look ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 5: Party Makeup -->
+      <div class="bg-white border border-borderPink rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 scroll-reveal">
+        <div>
+          <h3 class="font-serif text-xl text-textDark mb-2 mt-4">Party Makeup</h3>
+          <p class="text-xs text-textMuted leading-relaxed mb-6">
+            Ideal for bridesmaids and wedding guests. Customized makeup look including basic contouring, flawless foundation application, and elegant eye detailing.
+          </p>
+        </div>
+        <div class="border-t border-borderPink/50 pt-4 flex items-center justify-between">
+          <span class="text-xs font-mono text-roseGold uppercase tracking-wider">Social Package</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Party%20Makeup%20consultation." target="_blank" class="text-xs font-medium text-accentRose hover:text-textDark flex items-center gap-1 transition-colors duration-200 uppercase tracking-widest">
+            Book Look ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 6: HD Makeup -->
+      <div class="bg-white border border-borderPink rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 scroll-reveal">
+        <div>
+          <h3 class="font-serif text-xl text-textDark mb-2 mt-4">HD Makeup</h3>
+          <p class="text-xs text-textMuted leading-relaxed mb-6">
+            A premium airbrush and silicon-infused technique designed to look absolutely seamless under high-definition cameras, film shoots, and natural sunlight.
+          </p>
+        </div>
+        <div class="border-t border-borderPink/50 pt-4 flex items-center justify-between">
+          <span class="text-xs font-mono text-roseGold uppercase tracking-wider">Camera-Ready</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20an%20HD%20Makeup%20consultation." target="_blank" class="text-xs font-medium text-accentRose hover:text-textDark flex items-center gap-1 transition-colors duration-200 uppercase tracking-widest">
+            Book Look ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 7: Hair Styling -->
+      <div class="bg-white border border-borderPink rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 scroll-reveal">
+        <div>
+          <h3 class="font-serif text-xl text-textDark mb-2 mt-4">Signature Hair Styling</h3>
+          <p class="text-xs text-textMuted leading-relaxed mb-6">
+            Expert hair styling for non-bridal events. Includes bouncy blow-dries, sleek modern ponytails, romantic braids, and custom texturing tailored to your outfit.
+          </p>
+        </div>
+        <div class="border-t border-borderPink/50 pt-4 flex items-center justify-between">
+          <span class="text-xs font-mono text-roseGold uppercase tracking-wider">Atelier Hair</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Hair%20Styling%20appointment." target="_blank" class="text-xs font-medium text-accentRose hover:text-textDark flex items-center gap-1 transition-colors duration-200 uppercase tracking-widest">
+            Book Look ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 8: Bridal Hair Styling -->
+      <div class="bg-white border border-borderPink rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 scroll-reveal">
+        <div>
+          <h3 class="font-serif text-xl text-textDark mb-2 mt-4">Bridal Hair Sculpting</h3>
+          <p class="text-xs text-textMuted leading-relaxed mb-6">
+            Royal updos, traditional floral braids, and modern waves embedded with hair extensions and premium accessories. Sculpted with a flexible hold that withstands long festivities.
+          </p>
+        </div>
+        <div class="border-t border-borderPink/50 pt-4 flex items-center justify-between">
+          <span class="text-xs font-mono text-roseGold uppercase tracking-wider">Royal Hair</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Bridal%20Hair%20Styling%20consultation." target="_blank" class="text-xs font-medium text-accentRose hover:text-textDark flex items-center gap-1 transition-colors duration-200 uppercase tracking-widest">
+            Book Look ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 9: Saree & Dupatta Draping -->
+      <div class="bg-white border border-borderPink rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 scroll-reveal">
+        <div>
+          <h3 class="font-serif text-xl text-textDark mb-2 mt-4">Saree &amp; Dupatta Draping</h3>
+          <p class="text-xs text-textMuted leading-relaxed mb-6">
+            Precision setting of heavy bridal lehenga dupattas, double-dupatta framing, saree pleating, and secure styling designed to stay perfect throughout the wedding.
+          </p>
+        </div>
+        <div class="border-t border-borderPink/50 pt-4 flex items-center justify-between">
+          <span class="text-xs font-mono text-roseGold uppercase tracking-wider">Precision Fit</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Saree%20%26%20Dupatta%20Draping%20appointment." target="_blank" class="text-xs font-medium text-accentRose hover:text-textDark flex items-center gap-1 transition-colors duration-200 uppercase tracking-widest">
+            Book Look ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 10: Luxury Bridal Consultation -->
+      <div class="bg-white border border-borderPink rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 md:col-span-2 lg:col-span-3 hover:border-accentRose scroll-reveal">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-4">
+          <div>
+            <span class="text-[9px] font-mono tracking-widest text-accentRose uppercase font-semibold">THE BLUEPRINT FOR PERFECTION</span>
+            <h3 class="font-serif text-2xl text-textDark mt-1">Luxury Bridal Consultation</h3>
+            <p class="text-xs text-textMuted leading-relaxed mt-2 max-w-2xl">
+              Meet 1-on-1 with our master artist to plan your entire look. We analyze your skin chemistry, map facial structures, discuss your dress hues and jewelry weight, and pre-plan custom aesthetics so your wedding day is entirely stress-free.
+            </p>
+          </div>
+          <div class="shrink-0 flex items-center">
+            <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Luxury%20Bridal%20Consultation." target="_blank" class="bg-accentRose hover:bg-accentRose/90 text-white text-xs uppercase tracking-widest px-6 py-3.5 rounded-full transition-all duration-300 font-semibold shadow-sm">
+              Schedule Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BRIDAL EXPERIENCE SECTION -->
+  <section id="experience" class="py-24 px-6 bg-secondaryBg/40 border-y border-borderPink/30">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 scroll-reveal">
+        <span class="text-xs font-mono tracking-[0.3em] text-accentRose uppercase font-semibold">THE COUTURE JOURNEY</span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-textDark mt-3 mb-4 tracking-tight">The Bridal Experience</h2>
+        <div class="h-0.5 w-16 bg-roseGold/60 mx-auto mb-6"></div>
+        <p class="text-textMuted max-w-xl mx-auto text-sm md:text-base font-light">
+          From the initial meeting to your grand wedding entrance, we carefully manage every visual detail of your luxury experience.
+        </p>
+      </div>
+
+      <!-- Experience Stepper Timeline -->
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 relative">
+        <!-- Connecting Line for desktop -->
+        <div class="hidden lg:block absolute top-12 left-[10%] right-[10%] h-[1px] bg-roseGold/30 -z-10"></div>
+
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center text-center p-4 bg-white/60 backdrop-blur-sm border border-borderPink/40 rounded-2xl relative scroll-reveal">
+          <div class="w-12 h-12 rounded-full bg-accentRose text-white font-serif text-lg flex items-center justify-center shadow-md mb-4 relative z-10 font-bold">1</div>
+          <h4 class="font-serif text-base text-textDark mb-2">1-on-1 Consultation</h4>
+          <p class="text-xs text-textMuted leading-relaxed">
+            We meet in our private suite to discuss your theme, dress drapery, jewelry, skin goals, and schedule.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center text-center p-4 bg-white/60 backdrop-blur-sm border border-borderPink/40 rounded-2xl relative scroll-reveal">
+          <div class="w-12 h-12 rounded-full bg-roseGold text-white font-serif text-lg flex items-center justify-center shadow-md mb-4 relative z-10 font-bold">2</div>
+          <h4 class="font-serif text-base text-textDark mb-2">Personalized Design</h4>
+          <p class="text-xs text-textMuted leading-relaxed">
+            We map out your makeup tone, lipstick formulas, and custom structural hair contours specifically for you.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center text-center p-4 bg-white/60 backdrop-blur-sm border border-borderPink/40 rounded-2xl relative scroll-reveal">
+          <div class="w-12 h-12 rounded-full bg-accentRose text-white font-serif text-lg flex items-center justify-center shadow-md mb-4 relative z-10 font-bold">3</div>
+          <h4 class="font-serif text-base text-textDark mb-2">Premium Cosmetics</h4>
+          <p class="text-xs text-textMuted leading-relaxed">
+            Your look is curated exclusively with premium, lightweight, high-end certified global beauty products.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex flex-col items-center text-center p-4 bg-white/60 backdrop-blur-sm border border-borderPink/40 rounded-2xl relative scroll-reveal">
+          <div class="w-12 h-12 rounded-full bg-roseGold text-white font-serif text-lg flex items-center justify-center shadow-md mb-4 relative z-10 font-bold">4</div>
+          <h4 class="font-serif text-base text-textDark mb-2">Expert Execution</h4>
+          <p class="text-xs text-textMuted leading-relaxed">
+            Relax in your private mirror suite as master artists translate our pre-planned aesthetics into reality.
+          </p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="flex flex-col items-center text-center p-4 bg-white/60 backdrop-blur-sm border border-borderPink/40 rounded-2xl relative scroll-reveal">
+          <div class="w-12 h-12 rounded-full bg-accentRose text-white font-serif text-lg flex items-center justify-center shadow-md mb-4 relative z-10 font-bold">5</div>
+          <h4 class="font-serif text-base text-textDark mb-2">Wedding Day Support</h4>
+          <p class="text-xs text-textMuted leading-relaxed">
+            We assist you with draping, veil placement, hair locking, and final skin perfectors before your final entrance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US SECTION -->
+  <section class="py-24 px-6 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Image Column representing Studio Vibe -->
+      <div class="lg:col-span-5 flex justify-center scroll-reveal">
+        <div class="relative w-full max-w-sm aspect-[4/5] rounded-3xl overflow-hidden shadow-xl border border-borderPink p-4 bg-primaryBg">
+          <div class="w-full h-full border border-roseGold/30 rounded-2xl flex flex-col items-center justify-center text-center p-6 relative">
+            <span class="text-4xl text-roseGold animate-pulse mb-4">✦</span>
+            <div class="h-px w-12 bg-roseGold/60 mb-4"></div>
+            <h3 class="font-serif text-2xl text-textDark mb-2">Our Quality Seal</h3>
+            <p class="text-xs text-textMuted leading-relaxed max-w-[240px] mb-6">
+              "We believe makeup is a fine art. Every brushstroke, color blend, and placement is designed to honor your individuality."
+            </p>
+            <div class="flex items-center gap-1">
+              <!-- Google Review Badging -->
+              <span class="text-xs font-mono font-semibold text-textDark">Google Star Choice</span>
+              <span class="text-accentRose">★★★★★</span>
+            </div>
+            <span class="text-[9px] font-mono text-roseGold uppercase tracking-widest mt-2">SADDAR CANTONMENT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copy Column -->
+      <div class="lg:col-span-7 flex flex-col space-y-6 scroll-reveal">
+        <span class="text-xs font-mono tracking-[0.3em] text-accentRose uppercase font-semibold">THE DIFFERENCE IS IN THE DETAILS</span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-textDark tracking-tight">Why Choose Ki &amp; Ko's?</h2>
+        <div class="h-0.5 w-16 bg-roseGold/60"></div>
+        <p class="text-textMuted text-base font-light leading-relaxed">
+          Every salon applies makeup, but Ki &amp; Ko's Bridal Studio is structured specifically around the fine art of luxury wedding styling. Here is why discerning brides in Hyderabad trust us for their most sacred milestone:
+        </p>
+
+        <!-- Grid of Reasons -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+          <!-- Reason 1 -->
+          <div class="flex gap-3">
+            <div class="w-10 h-10 shrink-0 rounded-full bg-highlight flex items-center justify-center text-accentRose font-serif text-sm">✓</div>
+            <div>
+              <h4 class="font-serif text-base text-textDark">30+ Five-Star Reviews</h4>
+              <p class="text-xs text-textMuted mt-1">Acclaimed consistently by local families for pristine aesthetics and reliable services.</p>
+            </div>
+          </div>
+          <!-- Reason 2 -->
+          <div class="flex gap-3">
+            <div class="w-10 h-10 shrink-0 rounded-full bg-secondaryBg flex items-center justify-center text-roseGold font-serif text-sm">✓</div>
+            <div>
+              <h4 class="font-serif text-base text-textDark">4.8 Star Rated Studio</h4>
+              <p class="text-xs text-textMuted mt-1">High-end ranking based on verified, glowing wedding reviews and results.</p>
+            </div>
+          </div>
+          <!-- Reason 3 -->
+          <div class="flex gap-3">
+            <div class="w-10 h-10 shrink-0 rounded-full bg-highlight flex items-center justify-center text-accentRose font-serif text-sm">✓</div>
+            <div>
+              <h4 class="font-serif text-base text-textDark">Experienced Bridal Experts</h4>
+              <p class="text-xs text-textMuted mt-1">Our artists train globally and understand the interplay of camera lighting and skin pigment.</p>
+            </div>
+          </div>
+          <!-- Reason 4 -->
+          <div class="flex gap-3">
+            <div class="w-10 h-10 shrink-0 rounded-full bg-secondaryBg flex items-center justify-center text-roseGold font-serif text-sm">✓</div>
+            <div>
+              <h4 class="font-serif text-base text-textDark">Luxury Products Only</h4>
+              <p class="text-xs text-textMuted mt-1">Absolute protection. Non-comedogenic high-end skincare primers and luxury setting products.</p>
+            </div>
+          </div>
+          <!-- Reason 5 -->
+          <div class="flex gap-3">
+            <div class="w-10 h-10 shrink-0 rounded-full bg-highlight flex items-center justify-center text-accentRose font-serif text-sm">✓</div>
+            <div>
+              <h4 class="font-serif text-base text-textDark">Bespoke Clean Artistry</h4>
+              <p class="text-xs text-textMuted mt-1">Sanitized workspaces, custom-cleaned luxury brushes, and fresh sponges for every single bride.</p>
+            </div>
+          </div>
+          <!-- Reason 6 -->
+          <div class="flex gap-3">
+            <div class="w-10 h-10 shrink-0 rounded-full bg-secondaryBg flex items-center justify-center text-roseGold font-serif text-sm">✓</div>
+            <div>
+              <h4 class="font-serif text-base text-textDark">Elegant Modern Techniques</h4>
+              <p class="text-xs text-textMuted mt-1">Beautiful micro-contouring, glowing draping, and customized styles matching your features.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRIDAL PORTFOLIO -->
+  <section id="portfolio" class="py-24 px-6 bg-primaryBg border-t border-borderPink/30">
+    <div class="max-w-7xl mx-auto text-center mb-16 scroll-reveal">
+      <span class="text-xs font-mono tracking-[0.3em] text-accentRose uppercase font-semibold">THE BRIDAL ATELIER</span>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-textDark mt-3 mb-4 tracking-tight">Our Curated Masterpieces</h2>
+      <div class="h-0.5 w-16 bg-roseGold/60 mx-auto mb-6"></div>
+      <p class="text-textMuted max-w-xl mx-auto text-sm md:text-base font-light">
+        A gallery of our signature bridal compositions. Clean lines, elegant frames, and dedicated editorial concepts waiting for your wedding memories.
+      </p>
+    </div>
+
+    <!-- Portfolio Grid with Luxury Frames -->
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Look 1: Classic Baraat Bride -->
+      <div class="bg-white border border-borderPink/80 p-5 rounded-3xl flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 group scroll-reveal">
+        <!-- Luxury Card Frame Placement -->
+        <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-tr from-secondaryBg via-white to-highlight/40 border border-roseGold/20 flex flex-col items-center justify-center p-6 text-center">
+          <!-- Stylized Background Pattern -->
+          <div class="absolute inset-4 border border-dashed border-roseGold/30 rounded-xl -z-10 flex flex-col justify-between p-4">
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-left">LOOK #01</span>
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-right">BARAAT</span>
+          </div>
+          
+          <div class="w-20 h-20 rounded-full bg-white border border-roseGold/30 flex items-center justify-center text-2xl text-accentRose mb-4 group-hover:scale-110 transition-transform duration-500 shadow-inner">
+            👸
+          </div>
+          <h4 class="font-serif text-lg text-textDark mb-1">Classic Baraat Bride</h4>
+          <p class="text-[10px] tracking-widest font-mono text-roseGold uppercase font-semibold mb-3">ROYAL RED GLAMOUR</p>
+          <p class="text-xs text-textMuted leading-relaxed max-w-[200px]">
+            Dewy velvet skin, soft smokey crimson eyes, and bold signature lips designed to frame traditional heritage attire.
+          </p>
+        </div>
+        <div class="mt-4 flex justify-between items-center px-1">
+          <span class="text-xs text-textMuted font-medium">Baraat Composition</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20see%20real%20photos%20of%20the%20Classic%20Baraat%20Bride%20look." target="_blank" class="text-xs font-semibold text-accentRose hover:text-textDark transition-colors duration-200 uppercase tracking-widest">Inquire ➔</a>
+        </div>
+      </div>
+
+      <!-- Look 2: Soft Glam Walima Look -->
+      <div class="bg-white border border-borderPink/80 p-5 rounded-3xl flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 group scroll-reveal">
+        <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-tr from-secondaryBg via-white to-highlight/40 border border-roseGold/20 flex flex-col items-center justify-center p-6 text-center">
+          <div class="absolute inset-4 border border-dashed border-roseGold/30 rounded-xl -z-10 flex flex-col justify-between p-4">
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-left">LOOK #02</span>
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-right">WALIMA</span>
+          </div>
+          <div class="w-20 h-20 rounded-full bg-white border border-roseGold/30 flex items-center justify-center text-2xl text-accentRose mb-4 group-hover:scale-110 transition-transform duration-500 shadow-inner">
+            ✨
+          </div>
+          <h4 class="font-serif text-lg text-textDark mb-1">Soft Glam Walima Look</h4>
+          <p class="text-[10px] tracking-widest font-mono text-roseGold uppercase font-semibold mb-3">ANGELIC DEWY GLOW</p>
+          <p class="text-xs text-textMuted leading-relaxed max-w-[200px]">
+            Luminous glass-finish skin, silver champagne eye detailing, and custom blushing pink rose lips.
+          </p>
+        </div>
+        <div class="mt-4 flex justify-between items-center px-1">
+          <span class="text-xs text-textMuted font-medium">Walima Composition</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20see%20real%20photos%20of%20the%20Soft%20Glam%20Walima%20look." target="_blank" class="text-xs font-semibold text-accentRose hover:text-textDark transition-colors duration-200 uppercase tracking-widest">Inquire ➔</a>
+        </div>
+      </div>
+
+      <!-- Look 3: Modern Reception Glow -->
+      <div class="bg-white border border-borderPink/80 p-5 rounded-3xl flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 group scroll-reveal">
+        <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-tr from-secondaryBg via-white to-highlight/40 border border-roseGold/20 flex flex-col items-center justify-center p-6 text-center">
+          <div class="absolute inset-4 border border-dashed border-roseGold/30 rounded-xl -z-10 flex flex-col justify-between p-4">
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-left">LOOK #03</span>
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-right">RECEPTION</span>
+          </div>
+          <div class="w-20 h-20 rounded-full bg-white border border-roseGold/30 flex items-center justify-center text-2xl text-accentRose mb-4 group-hover:scale-110 transition-transform duration-500 shadow-inner">
+            💎
+          </div>
+          <h4 class="font-serif text-lg text-textDark mb-1">Modern Reception Glow</h4>
+          <p class="text-[10px] tracking-widest font-mono text-roseGold uppercase font-semibold mb-3">EDITORIAL BRONZED</p>
+          <p class="text-xs text-textMuted leading-relaxed max-w-[200px]">
+            Soft bronze definitions, editorial lash layering, and sophisticated nude high-shine gloss.
+          </p>
+        </div>
+        <div class="mt-4 flex justify-between items-center px-1">
+          <span class="text-xs text-textMuted font-medium">Reception Composition</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20see%20real%20photos%20of%20the%20Modern%20Reception%20Glow%20look." target="_blank" class="text-xs font-semibold text-accentRose hover:text-textDark transition-colors duration-200 uppercase tracking-widest">Inquire ➔</a>
+        </div>
+      </div>
+
+      <!-- Look 4: Radiant Engagement Look -->
+      <div class="bg-white border border-borderPink/80 p-5 rounded-3xl flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 group scroll-reveal">
+        <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-tr from-secondaryBg via-white to-highlight/40 border border-roseGold/20 flex flex-col items-center justify-center p-6 text-center">
+          <div class="absolute inset-4 border border-dashed border-roseGold/30 rounded-xl -z-10 flex flex-col justify-between p-4">
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-left">LOOK #04</span>
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-right">ENGAGEMENT</span>
+          </div>
+          <div class="w-20 h-20 rounded-full bg-white border border-roseGold/30 flex items-center justify-center text-2xl text-accentRose mb-4 group-hover:scale-110 transition-transform duration-500 shadow-inner">
+            💍
+          </div>
+          <h4 class="font-serif text-lg text-textDark mb-1">Radiant Engagement Look</h4>
+          <p class="text-[10px] tracking-widest font-mono text-roseGold uppercase font-semibold mb-3">PEACH &amp; GOLD RADIANCE</p>
+          <p class="text-xs text-textMuted leading-relaxed max-w-[200px]">
+            Subtle warm shadows, soft-focus foundation finish, and matching pastel lip colors.
+          </p>
+        </div>
+        <div class="mt-4 flex justify-between items-center px-1">
+          <span class="text-xs text-textMuted font-medium">Engagement Composition</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20see%20real%20photos%20of%20the%20Radiant%20Engagement%20look." target="_blank" class="text-xs font-semibold text-accentRose hover:text-textDark transition-colors duration-200 uppercase tracking-widest">Inquire ➔</a>
+        </div>
+      </div>
+
+      <!-- Look 5: Royal Shendi Glam -->
+      <div class="bg-white border border-borderPink/80 p-5 rounded-3xl flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 group scroll-reveal">
+        <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-tr from-secondaryBg via-white to-highlight/40 border border-roseGold/20 flex flex-col items-center justify-center p-6 text-center">
+          <div class="absolute inset-4 border border-dashed border-roseGold/30 rounded-xl -z-10 flex flex-col justify-between p-4">
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-left">LOOK #05</span>
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-right">SHENDI</span>
+          </div>
+          <div class="w-20 h-20 rounded-full bg-white border border-roseGold/30 flex items-center justify-center text-2xl text-accentRose mb-4 group-hover:scale-110 transition-transform duration-500 shadow-inner">
+            👑
+          </div>
+          <h4 class="font-serif text-lg text-textDark mb-1">Royal Shendi Glam</h4>
+          <p class="text-[10px] tracking-widest font-mono text-roseGold uppercase font-semibold mb-3">METALLIC GLOW &amp; LINER</p>
+          <p class="text-xs text-textMuted leading-relaxed max-w-[200px]">
+            Statuesque golden eyelids, classic liquid wing liner, and warm berry-tinted matte lips.
+          </p>
+        </div>
+        <div class="mt-4 flex justify-between items-center px-1">
+          <span class="text-xs text-textMuted font-medium">Shendi Composition</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20see%20real%20photos%20of%20the%20Royal%20Shendi%20Glam%20look." target="_blank" class="text-xs font-semibold text-accentRose hover:text-textDark transition-colors duration-200 uppercase tracking-widest">Inquire ➔</a>
+        </div>
+      </div>
+
+      <!-- Look 6: Radiant Nikkah Aesthetic -->
+      <div class="bg-white border border-borderPink/80 p-5 rounded-3xl flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 group scroll-reveal">
+        <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-tr from-secondaryBg via-white to-highlight/40 border border-roseGold/20 flex flex-col items-center justify-center p-6 text-center">
+          <div class="absolute inset-4 border border-dashed border-roseGold/30 rounded-xl -z-10 flex flex-col justify-between p-4">
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-left">LOOK #06</span>
+            <span class="text-[8px] font-mono tracking-widest text-roseGold/60 uppercase text-right">NIKKAH</span>
+          </div>
+          <div class="w-20 h-20 rounded-full bg-white border border-roseGold/30 flex items-center justify-center text-2xl text-accentRose mb-4 group-hover:scale-110 transition-transform duration-500 shadow-inner">
+            🕊️
+          </div>
+          <h4 class="font-serif text-lg text-textDark mb-1">Intimate Nikkah Aesthetic</h4>
+          <p class="text-[10px] tracking-widest font-mono text-roseGold uppercase font-semibold mb-3">MINIMALIST ROYAL GLOW</p>
+          <p class="text-xs text-textMuted leading-relaxed max-w-[200px]">
+            Super clean skin base, delicate rose-champagne eye detailing, and a classic moisturized pink pout.
+          </p>
+        </div>
+        <div class="mt-4 flex justify-between items-center px-1">
+          <span class="text-xs text-textMuted font-medium">Nikkah Composition</span>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20see%20real%20photos%20of%20the%20Intimate%20Nikkah%20Aesthetic%20look." target="_blank" class="text-xs font-semibold text-accentRose hover:text-textDark transition-colors duration-200 uppercase tracking-widest">Inquire ➔</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BRIDAL TESTIMONIALS -->
+  <section id="testimonials" class="py-24 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 scroll-reveal">
+        <span class="text-xs font-mono tracking-[0.3em] text-accentRose uppercase font-semibold">WORDS OF ELEGANCE</span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-textDark mt-3 mb-4 tracking-tight">Bridal Love Letters</h2>
+        <div class="h-0.5 w-16 bg-roseGold/60 mx-auto mb-6"></div>
+        <p class="text-textMuted max-w-xl mx-auto text-sm md:text-base font-light">
+          Nothing makes us prouder than seeing our brides walk out of our studio with radiant confidence. Here are a few stories.
+        </p>
+      </div>
+
+      <!-- Testimonials Slider Container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        
+        <!-- Testimonial 1 -->
+        <div class="bg-primaryBg border border-borderPink p-8 rounded-2xl flex flex-col justify-between hover:shadow-lg transition-all duration-300 relative scroll-reveal">
+          <div class="text-accentRose text-4xl font-serif absolute top-4 right-6 opacity-30">“</div>
+          <div>
+            <div class="flex items-center gap-1 mb-4 text-roseGold text-sm">★★★★★</div>
+            <p class="text-xs md:text-sm text-textDark italic leading-relaxed mb-6">
+              "Booking Ki &amp; Ko's for my Baraat was the best decision I made for my wedding. The team was incredibly patient and discussed every detail during my consultation. The makeup was lightweight, completely flawless on camera, and lasted for 12 hours straight without a crease! Everyone kept asking where I got my makeup done."
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-highlight flex items-center justify-center text-accentRose text-sm font-semibold">A</div>
+            <div class="flex flex-col">
+              <span class="text-xs text-textDark font-semibold">Ayesha Khan</span>
+              <span class="text-[9px] font-mono uppercase text-roseGold tracking-widest">Baraat Bride • June 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-primaryBg border border-borderPink p-8 rounded-2xl flex flex-col justify-between hover:shadow-lg transition-all duration-300 relative scroll-reveal">
+          <div class="text-accentRose text-4xl font-serif absolute top-4 right-6 opacity-30">“</div>
+          <div>
+            <div class="flex items-center gap-1 mb-4 text-roseGold text-sm">★★★★★</div>
+            <p class="text-xs md:text-sm text-textDark italic leading-relaxed mb-6">
+              "For my Walima, I wanted a very soft, dewy, and modern look. Ki &amp; Ko's Bridal Studio delivered beyond expectations! They used Charlotte Tilbury products which suited my dry skin perfectly. The custom hairdo was stunning and stayed intact throughout. Highly recommend their high-end service!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-highlight flex items-center justify-center text-accentRose text-sm font-semibold">S</div>
+            <div class="flex flex-col">
+              <span class="text-xs text-textDark font-semibold">Sana Baloch</span>
+              <span class="text-[9px] font-mono uppercase text-roseGold tracking-widest">Walima Bride • May 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-primaryBg border border-borderPink p-8 rounded-2xl flex flex-col justify-between hover:shadow-lg transition-all duration-300 relative scroll-reveal">
+          <div class="text-accentRose text-4xl font-serif absolute top-4 right-6 opacity-30">“</div>
+          <div>
+            <div class="flex items-center gap-1 mb-4 text-roseGold text-sm">★★★★★</div>
+            <p class="text-xs md:text-sm text-textDark italic leading-relaxed mb-6">
+              "My engagement makeup was elegant and airy. The entire salon studio was so hygienic and calming—it felt like a private sanctuary away from all the wedding stress. They really understand color theory and didn't make me look white or cakey. Truly Hyderabad's finest."
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-highlight flex items-center justify-center text-accentRose text-sm font-semibold">M</div>
+            <div class="flex flex-col">
+              <span class="text-xs text-textDark font-semibold">Mariam Yusuf</span>
+              <span class="text-[9px] font-mono uppercase text-roseGold tracking-widest">Engagement Bride • April 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="bg-primaryBg border border-borderPink p-8 rounded-2xl flex flex-col justify-between hover:shadow-lg transition-all duration-300 relative scroll-reveal">
+          <div class="text-accentRose text-4xl font-serif absolute top-4 right-6 opacity-30">“</div>
+          <div>
+            <div class="flex items-center gap-1 mb-4 text-roseGold text-sm">★★★★★</div>
+            <p class="text-xs md:text-sm text-textDark italic leading-relaxed mb-6">
+              "I am very particular about my hair and saree draping. The team at Ki &amp; Ko's did an outstanding job setting my heavy banarasi dupatta. The makeup was glowing, perfectly balanced, and highly photographic. Thank you so much for treating me like a queen!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-highlight flex items-center justify-center text-accentRose text-sm font-semibold">Z</div>
+            <div class="flex flex-col">
+              <span class="text-xs text-textDark font-semibold">Zahra Shah</span>
+              <span class="text-[9px] font-mono uppercase text-roseGold tracking-widest">Reception Bride • March 2026</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & BOOKING SECTION -->
+  <section id="contact" class="py-24 px-6 bg-secondaryBg/20 border-t border-borderPink/40">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 scroll-reveal">
+        <span class="text-xs font-mono tracking-[0.3em] text-accentRose uppercase font-semibold">RESERVE YOUR GLAMOUR</span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-textDark mt-3 mb-4 tracking-tight">Book Your Consultation</h2>
+        <div class="h-0.5 w-16 bg-roseGold/60 mx-auto mb-6"></div>
+        <p class="text-textMuted max-w-xl mx-auto text-sm md:text-base font-light">
+          Fill out our secure reservation form or reach our studio directly. We will get back to you within 24 hours.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Contact Information & Map -->
+        <div class="lg:col-span-5 flex flex-col space-y-8 scroll-reveal">
+          <div class="bg-white border border-borderPink p-8 rounded-3xl space-y-6 shadow-sm">
+            <h3 class="font-serif text-2xl text-textDark mb-4">Ki &amp; Ko's Bridal Studio</h3>
+            
+            <div class="flex items-start gap-4">
+              <span class="text-roseGold text-lg mt-0.5">📍</span>
+              <div>
+                <h4 class="text-xs font-mono uppercase tracking-widest text-textMuted font-semibold">Studio Address</h4>
+                <p class="text-sm text-textDark mt-1 leading-relaxed">
+                  Doctors Line, Opposite Askari Bank,<br />
+                  Beside Bandook Wala Interior, Saddar Cantonment,<br />
+                  Hyderabad, 71000, Pakistan
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <span class="text-roseGold text-lg mt-0.5">📞</span>
+              <div>
+                <h4 class="text-xs font-mono uppercase tracking-widest text-textMuted font-semibold">Call &amp; WhatsApp</h4>
+                <p class="text-sm text-textDark mt-1 font-semibold hover:text-accentRose transition-colors">
+                  <a href="tel:+923020000312">+92 302 0000312</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <span class="text-roseGold text-lg mt-0.5">🕒</span>
+              <div>
+                <h4 class="text-xs font-mono uppercase tracking-widest text-textMuted font-semibold">Business Hours</h4>
+                <div class="text-xs text-textDark mt-1 space-y-1">
+                  <div class="flex justify-between w-48"><span>Tuesday – Sunday:</span> <span class="font-medium">11:00 AM – 8:00 PM</span></div>
+                  <div class="flex justify-between w-48 text-accentRose font-medium"><span>Monday:</span> <span>Closed</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Quick Action CTAs -->
+            <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-borderPink/40">
+              <a href="tel:+923020000312" class="flex-1 bg-white border border-roseGold text-textDark hover:bg-highlight/30 text-xs uppercase tracking-widest font-semibold py-3.5 rounded-full text-center transition-all duration-200">
+                Call Now
+              </a>
+              <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20bridal%20consultation." target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white text-xs uppercase tracking-widest font-semibold py-3.5 rounded-full text-center flex items-center justify-center gap-2 transition-all duration-200">
+                <span>WhatsApp Live</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Google Maps -->
+          <div class="w-full h-64 rounded-3xl overflow-hidden border border-borderPink shadow-sm">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.814328811867!2d68.3615175!3d25.3775986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7096e8e50a5f%3A0xc3e13d4cc7e4ec70!2sSaddar%20Cantonment%20Hyderabad!5e0!3m2!1sen!2spk!4v1719438090000!5m2!1sen!2spk" 
+              class="w-full h-full border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="lg:col-span-7 scroll-reveal">
+          <div class="bg-white border border-borderPink p-8 md:p-10 rounded-3xl shadow-sm">
+            <h3 class="font-serif text-2xl text-textDark mb-2">Send an Inquiry</h3>
+            <p class="text-xs text-textMuted mb-8 leading-relaxed">Fill in your information to reserve your session. Our booking manager will check availability and coordinate with you.</p>
+            
+            <!-- JavaScript Alert Banner -->
+            <div id="form-alert" class="hidden mb-6 p-4 rounded-xl text-xs font-semibold"></div>
+
+            <form id="bridal-contact-form" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Name -->
+                <div class="flex flex-col space-y-1">
+                  <label for="form-name" class="text-[10px] font-mono uppercase tracking-widest text-textMuted font-semibold">Your Name *</label>
+                  <input type="text" id="form-name" required class="border border-borderPink rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accentRose transition-colors" placeholder="e.g., Ayesha Khan" />
+                </div>
+                <!-- Phone -->
+                <div class="flex flex-col space-y-1">
+                  <label for="form-phone" class="text-[10px] font-mono uppercase tracking-widest text-textMuted font-semibold">Phone / WhatsApp *</label>
+                  <input type="tel" id="form-phone" required class="border border-borderPink rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accentRose transition-colors" placeholder="e.g., +92 300 1234567" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Event Date -->
+                <div class="flex flex-col space-y-1">
+                  <label for="form-date" class="text-[10px] font-mono uppercase tracking-widest text-textMuted font-semibold">Event Date</label>
+                  <input type="date" id="form-date" class="border border-borderPink rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accentRose transition-colors text-textMuted" />
+                </div>
+                <!-- Services -->
+                <div class="flex flex-col space-y-1">
+                  <label for="form-service" class="text-[10px] font-mono uppercase tracking-widest text-textMuted font-semibold">Service Needed</label>
+                  <select id="form-service" class="border border-borderPink bg-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accentRose transition-colors text-textMuted">
+                    <option value="bridal">Signature Bridal Makeup</option>
+                    <option value="engagement">Engagement Makeup</option>
+                    <option value="reception">Reception Makeup</option>
+                    <option value="walima">Walima Makeup</option>
+                    <option value="party">Party / Social Makeup</option>
+                    <option value="hd">High-Definition HD Makeup</option>
+                    <option value="styling">Hair Styling &amp; Draping Only</option>
+                    <option value="consultation">Bespoke Bridal Consultation</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="flex flex-col space-y-1">
+                <label for="form-message" class="text-[10px] font-mono uppercase tracking-widest text-textMuted font-semibold">Special Requests &amp; Details</label>
+                <textarea id="form-message" rows="4" class="border border-borderPink rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accentRose transition-colors" placeholder="Share your dress colors, jewelry type, or any specific beauty concerns..."></textarea>
+              </div>
+
+              <!-- Disclaimer -->
+              <div class="text-[11px] text-textMuted leading-relaxed">
+                🔒 Your privacy is secured. Submit this form, and we will formulate a quote or instantly open an interactive WhatsApp chat with your details.
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="w-full bg-accentRose hover:bg-accentRose/95 text-white text-xs font-semibold uppercase tracking-[0.2em] py-4 rounded-full transition-all duration-300 shadow-md flex items-center justify-center gap-2">
+                <span>Request Reservation Details</span>
+                <span>➔</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY BOTTOM BUTTONS -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3 animate-fade-in">
+    <!-- WhatsApp Sticky -->
+    <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20bridal%20consultation." target="_blank" class="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group relative" aria-label="WhatsApp Live Chat">
+      <svg class="w-7.5 h-7.5 fill-white" viewBox="0 0 24 24">
+        <path d="M12.004 2Cc-5.51 0-9.993 4.483-9.993 9.993 0 1.763.461 3.42 1.268 4.873l-1.347 4.925 5.043-1.324a9.916 9.916 0 005.029 1.355h.004c5.51 0 9.993-4.483 9.993-9.993 0-5.51-4.483-9.993-9.993-9.993zm5.835 14.152c-.243.684-1.21 1.25-1.657 1.303-.433.053-.984.083-2.903-.681-2.454-.975-4.004-3.466-4.127-3.63-.122-.164-.975-1.294-.975-2.47 0-1.176.61-1.752.827-1.983.218-.23.477-.289.637-.289.159 0 .318.001.458.007.147.006.34-.055.531.402.196.471.674 1.643.731 1.761.058.118.09.255.01.412-.08.158-.12.255-.24.394-.12.139-.251.31-.358.416-.12.118-.244.248-.104.488.14.24.62 1.017 1.329 1.649.913.814 1.68 1.066 1.918 1.186.24.12.381.102.523-.061.141-.164.61-.71.774-.952.164-.242.329-.202.553-.12.224.082 1.417.671 1.66 1.141.133.256.133.483.053.684z"/>
+      </svg>
+      <!-- Visual notification ping -->
+      <span class="absolute top-0 right-0 w-3 h-3 rounded-full bg-red-500 animate-ping"></span>
+      <span class="absolute top-0 right-0 w-3 h-3 rounded-full bg-red-500 border border-white"></span>
+      <!-- Tooltip -->
+      <span class="absolute right-16 top-1/2 -translate-y-1/2 bg-textDark text-white text-[10px] uppercase tracking-widest py-1.5 px-3 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap font-medium">Chat Live</span>
+    </a>
+
+    <!-- Back To Top Button -->
+    <button id="back-to-top" class="hidden w-14 h-14 rounded-full bg-white hover:bg-highlight border border-borderPink text-textDark flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group" aria-label="Back to Top">
+      <svg class="w-6 h-6 transform rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-textDark text-white pt-20 pb-10 px-6 border-t border-roseGold/20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
+      
+      <!-- Column 1: Brand Wordmark -->
+      <div class="lg:col-span-5 flex flex-col space-y-5">
+        <a href="#" class="flex flex-col w-fit">
+          <span class="font-serif text-3xl tracking-widest text-white">KI &amp; KO'S</span>
+          <span class="text-[10px] tracking-[0.3em] text-roseGold font-mono uppercase">Bridal Studio</span>
+        </a>
+        <p class="text-xs text-gray-400 max-w-sm leading-relaxed font-light">
+          An exquisite visual sanctuary dedicated to high-end bridal couture and fine-art makeup. Compiling luxury and elegance directly from our heart to your special day in Hyderabad.
+        </p>
+        <!-- Socials -->
+        <div class="flex items-center gap-4 pt-2">
+          <!-- WhatsApp -->
+          <a href="https://wa.me/923020000312" target="_blank" class="w-8 h-8 rounded-full border border-gray-600 hover:border-roseGold hover:text-roseGold flex items-center justify-center transition-colors text-sm" aria-label="WhatsApp">
+            💬
+          </a>
+          <!-- Instagram icon simulation -->
+          <a href="#" class="w-8 h-8 rounded-full border border-gray-600 hover:border-roseGold hover:text-roseGold flex items-center justify-center transition-colors text-xs font-serif italic" aria-label="Instagram">
+            ig
+          </a>
+          <!-- Facebook icon simulation -->
+          <a href="#" class="w-8 h-8 rounded-full border border-gray-600 hover:border-roseGold hover:text-roseGold flex items-center justify-center transition-colors text-xs font-serif italic" aria-label="Facebook">
+            fb
+          </a>
+          <!-- Pinterest icon simulation -->
+          <a href="#" class="w-8 h-8 rounded-full border border-gray-600 hover:border-roseGold hover:text-roseGold flex items-center justify-center transition-colors text-xs font-serif italic" aria-label="Pinterest">
+            pin
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="lg:col-span-3 flex flex-col space-y-4">
+        <h4 class="text-xs font-mono uppercase tracking-[0.2em] text-roseGold font-semibold">Bridal Studio</h4>
+        <div class="flex flex-col space-y-2.5 text-xs text-gray-400">
+          <a href="#hero" class="hover:text-roseGold transition-colors">Home Studio</a>
+          <a href="#about" class="hover:text-roseGold transition-colors">Our Philosophy</a>
+          <a href="#services" class="hover:text-roseGold transition-colors">Signature Services</a>
+          <a href="#experience" class="hover:text-roseGold transition-colors">The Bridal Journey</a>
+          <a href="#portfolio" class="hover:text-roseGold transition-colors">Atelier Portfolio</a>
+          <a href="#testimonials" class="hover:text-roseGold transition-colors">Bridal Reviews</a>
+          <a href="#contact" class="hover:text-roseGold transition-colors">Inquiries &amp; Map</a>
+        </div>
+      </div>
+
+      <!-- Column 3: Signature services quick access -->
+      <div class="lg:col-span-4 flex flex-col space-y-4">
+        <h4 class="text-xs font-mono uppercase tracking-[0.2em] text-roseGold font-semibold">Couture Looks</h4>
+        <div class="flex flex-col space-y-2.5 text-xs text-gray-400">
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Baraat%20Bridal%20Makeup." target="_blank" class="hover:text-roseGold transition-colors flex justify-between"><span>Royal Baraat Bridal</span> <span class="text-[9px] text-accentRose font-mono">Book</span></a>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Dewy%20Walima%20Makeup." target="_blank" class="hover:text-roseGold transition-colors flex justify-between"><span>Soft Dewy Walima</span> <span class="text-[9px] text-accentRose font-mono">Book</span></a>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20a%20Modern%20Reception%20Makeup." target="_blank" class="hover:text-roseGold transition-colors flex justify-between"><span>Modern Reception</span> <span class="text-[9px] text-accentRose font-mono">Book</span></a>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20an%20Engagement%20Makeup." target="_blank" class="hover:text-roseGold transition-colors flex justify-between"><span>Luminous Engagement</span> <span class="text-[9px] text-accentRose font-mono">Book</span></a>
+          <a href="https://wa.me/923020000312?text=Hello%20Ki%20%26%20Ko's%20Bridal%20Studio%2C%20I%20would%20like%20to%20book%20an%20Intimate%20Nikkah%20Makeup." target="_blank" class="hover:text-roseGold transition-colors flex justify-between"><span>Minimalist Nikkah</span> <span class="text-[9px] text-accentRose font-mono">Book</span></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom copyrights -->
+    <div class="max-w-7xl mx-auto pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-mono">
+      <span>© 2026 Ki &amp; Ko's Bridal Studio. Saddar Cantonment, Hyderabad. All rights reserved.</span>
+      <div class="flex gap-6">
+        <span class="hover:text-white transition-colors cursor-pointer">Privacy Philosophy</span>
+        <span class="hover:text-white transition-colors cursor-pointer">Terms of Consultation</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script link -->
+  <script src="script.js"></script>
+</body>
+</html>

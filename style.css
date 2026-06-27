@@ -1,0 +1,170 @@
+/* ==========================================================================
+   KI & KO'S BRIDAL STUDIO - CUSTOM LUXURY STYLESHEET
+   ========================================================================== */
+
+/* 1. Global Page Transitions & Core Overrides */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Luxury Headings Typography */
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* 2. Scroll Reveal Animation Classes */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom fade-in and slide-in animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* 3. Navigation Header Scroll Effect */
+#main-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 30px rgba(242, 220, 230, 0.25);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom-color: rgba(242, 220, 230, 0.6);
+}
+
+/* Header link styles with custom underline transitions */
+.nav-link {
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: #D96C95; /* accentRose */
+  transform-origin: bottom right;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* 4. Luxury Hover Gradients & Fine Borders */
+.gold-shimmer-btn {
+  background: linear-gradient(90deg, #D96C95, #D4AF37, #D96C95);
+  background-size: 200% auto;
+  transition: background-position 0.5s ease-out;
+}
+
+.gold-shimmer-btn:hover {
+  background-position: right center;
+}
+
+/* Glassmorphism elements */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Custom outline overlay animation for services/portfolio */
+.luxury-hover-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-hover-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid #D4AF37; /* roseGold */
+  opacity: 0;
+  border-radius: inherit;
+  transform: scale(0.98);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.luxury-hover-card:hover::before {
+  opacity: 0.4;
+  transform: scale(1);
+}
+
+/* Custom form control inputs */
+input, select, textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #D96C95 !important;
+  box-shadow: 0 0 0 3px rgba(217, 108, 149, 0.15) !important;
+}
+
+/* Hidden elements utilities */
+.hidden-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.hidden-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}

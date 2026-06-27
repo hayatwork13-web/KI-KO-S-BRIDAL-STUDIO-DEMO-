@@ -1,0 +1,6 @@
+{
+  "name": "Ki & Ko's Bridal Studio",
+  "description": "A premium, luxury bridal studio and makeup salon website with elegant design, custom-styled portfolio frames, and interactive consultation booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
